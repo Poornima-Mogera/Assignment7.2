@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20210914 23:39:12.542" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcase" source="d:\Assignment6.2\Tests\testcase.robot">
+<test id="s1-t1" name="Observe user is able to test sanity flow">
+<kw name="Open moolya career page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210914 23:39:13.800" level="INFO">Opening browser 'gc' to base url 'https://todo-webapp-1.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20210914 23:39:13.800" endtime="20210914 23:39:17.734"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210914 23:39:17.744" endtime="20210914 23:39:17.923"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:13.797" endtime="20210914 23:39:17.929"/>
+</kw>
+<kw name="Click on Enter a Todo and add to the list">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${todo1}</arg>
+<arg>buy eggs</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:17.947" level="INFO">Typing text 'buy eggs' into text field 'xpath= /html/body/div/form[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:17.942" endtime="20210914 23:39:18.172"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:18.177" level="INFO">Clicking element 'xpath= /html/body/div/form[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210914 23:39:18.173" endtime="20210914 23:39:18.246"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210914 23:39:21.256" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:18.247" endtime="20210914 23:39:21.256"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${todo1}</arg>
+<arg>buy milk</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:21.258" level="INFO">Typing text 'buy milk' into text field 'xpath= /html/body/div/form[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:21.258" endtime="20210914 23:39:21.338"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:21.339" level="INFO">Clicking element 'xpath= /html/body/div/form[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210914 23:39:21.339" endtime="20210914 23:39:21.387"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210914 23:39:24.406" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:21.388" endtime="20210914 23:39:24.406"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:17.934" endtime="20210914 23:39:24.406"/>
+</kw>
+<kw name="Delete milk from todo list">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:24.412" level="INFO">Clicking element 'xpath= /html/body/div/ul/li[4]/img'.</msg>
+<status status="PASS" starttime="20210914 23:39:24.410" endtime="20210914 23:39:24.466"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>milk deleted</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 23:39:24.468" endtime="20210914 23:39:24.472"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:24.406" endtime="20210914 23:39:24.475"/>
+</kw>
+<kw name="Search todo list with buy">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search}</arg>
+<arg>buy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:24.482" level="INFO">Typing text 'buy' into text field 'xpath= /html/body/div/form[1]/div/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:24.479" endtime="20210914 23:39:24.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210914 23:39:29.593" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:24.588" endtime="20210914 23:39:29.594"/>
+</kw>
+<kw name="Verify WebPage title">
+<arg>${expected_todo_name}</arg>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${title_n}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210914 23:39:29.604" endtime="20210914 23:39:29.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210914 23:39:34.676" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:29.663" endtime="20210914 23:39:34.677"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210914 23:39:34.681" endtime="20210914 23:39:36.914"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Final step passed milk is added</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 23:39:36.915" endtime="20210914 23:39:36.921"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:29.598" endtime="20210914 23:39:36.927"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:24.476" endtime="20210914 23:39:36.932"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:13.793" endtime="20210914 23:39:36.938"/>
+</test>
+<status status="PASS" starttime="20210914 23:39:12.562" endtime="20210914 23:39:36.948"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
