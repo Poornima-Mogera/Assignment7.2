@@ -60,7 +60,7 @@ Verify WebPage title
     Wait Until Page Contains  ${title_n} 
     sleep  5s
     Close Browser
-    Log to Console  Final step passed Poco is added to cart, Browser closed
+    Log to Console  Final step passed Realme is added to cart, Browser closed
     
 *** Variables ***
 ${id}=  xpath= /html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input
@@ -73,4 +73,4 @@ ${add_btn}=    xpath= //*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/u
 ${handle}  NEW
 ${Home_page}=    xpath= //*[@id="container"]/div/div[1]/div[1]/div[2]/div[1]/div/a[1]/img
 ${Cart}=    xpath= //*[@id="container"]/div/div[1]/div[1]/div[2]/div[5]/div/div/a
-${Expected_product_name1}=  POCO
+${Expected_product_name1}=  realme
