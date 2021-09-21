@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20210922 02:42:16.186" rpa="false" schemaversion="2">
 <suite id="s1" name="Testcase" source="d:\Assignment7.2\Tests\testcase.robot">
 <test id="s1-t1" name="Observe user is able to test sanity flow">
@@ -47,10 +48,43 @@
 <doc>Click the element identified by ``locator``.</doc>
 <msg timestamp="20210922 02:42:22.664" level="INFO">Clicking element 'xpath= /html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
 <status status="PASS" starttime="20210922 02:42:22.663" endtime="20210922 02:42:22.766"/>
+=======
+<robot generator="Robot 4.1 (Python 3.9.7 on win32)" generated="20210914 23:39:12.542" rpa="false" schemaversion="2">
+<suite id="s1" name="Testcase" source="d:\Assignment6.2\Tests\testcase.robot">
+<test id="s1-t1" name="Observe user is able to test sanity flow">
+<kw name="Open moolya career page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210914 23:39:13.800" level="INFO">Opening browser 'gc' to base url 'https://todo-webapp-1.herokuapp.com/'.</msg>
+<status status="PASS" starttime="20210914 23:39:13.800" endtime="20210914 23:39:17.734"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210914 23:39:17.744" endtime="20210914 23:39:17.923"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:13.797" endtime="20210914 23:39:17.929"/>
+</kw>
+<kw name="Click on Enter a Todo and add to the list">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${todo1}</arg>
+<arg>buy eggs</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:17.947" level="INFO">Typing text 'buy eggs' into text field 'xpath= /html/body/div/form[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:17.942" endtime="20210914 23:39:18.172"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:18.177" level="INFO">Clicking element 'xpath= /html/body/div/form[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210914 23:39:18.173" endtime="20210914 23:39:18.246"/>
+>>>>>>> ee05940cf31a431c77eb6ee3979a9208ab877a77
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20210922 02:42:25.782" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20210922 02:42:22.768" endtime="20210922 02:42:25.785"/>
 </kw>
@@ -100,10 +134,28 @@
 <doc>Click the element identified by ``locator``.</doc>
 <msg timestamp="20210922 02:42:28.732" level="INFO">Clicking element 'xpath= //*[@id="container"]/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
 <status status="PASS" starttime="20210922 02:42:28.724" endtime="20210922 02:42:28.847"/>
+=======
+<msg timestamp="20210914 23:39:21.256" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:18.247" endtime="20210914 23:39:21.256"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${todo1}</arg>
+<arg>buy milk</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:21.258" level="INFO">Typing text 'buy milk' into text field 'xpath= /html/body/div/form[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:21.258" endtime="20210914 23:39:21.338"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${add_item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:21.339" level="INFO">Clicking element 'xpath= /html/body/div/form[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20210914 23:39:21.339" endtime="20210914 23:39:21.387"/>
+>>>>>>> ee05940cf31a431c77eb6ee3979a9208ab877a77
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20210922 02:42:31.857" level="INFO">Slept 3 seconds</msg>
 <status status="PASS" starttime="20210922 02:42:28.850" endtime="20210922 02:42:31.861"/>
 </kw>
@@ -167,10 +219,52 @@
 <arg>${title_n}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
 <status status="PASS" starttime="20210922 02:42:38.794" endtime="20210922 02:42:38.814"/>
+=======
+<msg timestamp="20210914 23:39:24.406" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:21.388" endtime="20210914 23:39:24.406"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:17.934" endtime="20210914 23:39:24.406"/>
+</kw>
+<kw name="Delete milk from todo list">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Delete}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:24.412" level="INFO">Clicking element 'xpath= /html/body/div/ul/li[4]/img'.</msg>
+<status status="PASS" starttime="20210914 23:39:24.410" endtime="20210914 23:39:24.466"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>milk deleted</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 23:39:24.468" endtime="20210914 23:39:24.472"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:24.406" endtime="20210914 23:39:24.475"/>
+</kw>
+<kw name="Search todo list with buy">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${search}</arg>
+<arg>buy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210914 23:39:24.482" level="INFO">Typing text 'buy' into text field 'xpath= /html/body/div/form[1]/div/input'.</msg>
+<status status="PASS" starttime="20210914 23:39:24.479" endtime="20210914 23:39:24.587"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210914 23:39:29.593" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:24.588" endtime="20210914 23:39:29.594"/>
+</kw>
+<kw name="Verify WebPage title">
+<arg>${expected_todo_name}</arg>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${title_n}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20210914 23:39:29.604" endtime="20210914 23:39:29.658"/>
+>>>>>>> ee05940cf31a431c77eb6ee3979a9208ab877a77
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<<<<<<< HEAD
 <msg timestamp="20210922 02:42:43.817" level="INFO">Slept 5 seconds</msg>
 <status status="PASS" starttime="20210922 02:42:38.814" endtime="20210922 02:42:43.817"/>
 </kw>
@@ -195,6 +289,27 @@
 <status status="PASS" starttime="20210922 02:42:17.005" endtime="20210922 02:42:46.485"/>
 </test>
 <status status="PASS" starttime="20210922 02:42:16.197" endtime="20210922 02:42:46.494"/>
+=======
+<msg timestamp="20210914 23:39:34.676" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210914 23:39:29.663" endtime="20210914 23:39:34.677"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210914 23:39:34.681" endtime="20210914 23:39:36.914"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Final step passed milk is added</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210914 23:39:36.915" endtime="20210914 23:39:36.921"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:29.598" endtime="20210914 23:39:36.927"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:24.476" endtime="20210914 23:39:36.932"/>
+</kw>
+<status status="PASS" starttime="20210914 23:39:13.793" endtime="20210914 23:39:36.938"/>
+</test>
+<status status="PASS" starttime="20210914 23:39:12.562" endtime="20210914 23:39:36.948"/>
+>>>>>>> ee05940cf31a431c77eb6ee3979a9208ab877a77
 </suite>
 <statistics>
 <total>
