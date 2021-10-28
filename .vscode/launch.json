@@ -5,6 +5,60 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "robot",
+            "request": "launch",
+            "Test": "myTests.mySuite.* myTests",
+            "name": "Robotframework Debugger: test",
+            "WorkingDirectory": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "arguments": "",
+            "libraries": [],
+            "variables": [
+                {
+                    "Name": "Variable",
+                    "Value": "Value"
+                }
+            ]
+        },
+        {
+            "type": "robot",
+            "request": "launch",
+            "name": "Robotframework Debugger",
+            "program": "${workspaceFolder}/${relativeFile}",
+            "WorkingDirectory": "${workspaceFolder}/${relativeFile}",
+            "stopOnEntry": false,
+            "arguments": "",
+            "libraries": [],
+            "variables": [
+                {
+                    "Name": "Variable",
+                    "Value": "Value"
+                }
+            ]
+        },
+        {
+            "type": "robotframework-lsp",
+            "name": "Robot Framework: Launch template",
+            "request": "launch"
+        },
+        {
+            "type": "robotframework-lsp",
+            "name": "Robot Framework: Launch .robot file",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "target": "${file}",
+            "terminal": "none",
+            "env": {},
+            "args": []
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "robotframework-lsp",
             "name": "Robot Framework: Launch .robot file",
             "request": "launch",
